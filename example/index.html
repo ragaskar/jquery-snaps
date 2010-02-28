@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>jquery.snaps example</title>
+  <script type="text/javascript" src="../lib/jquery-1.4.1.js"></script>
+  <script type="text/javascript" src="../lib/jquery.snaps.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+  $(function() {
+    $("#main").snaps(".previews")
+  });
+
+</script>
+<form>
+  <img id="main" style="width:400px; height:400px;" src="images/one.jpg">
+  <br />
+  <img class="previews" style="width:100px; height:100px;" src="images/one.jpg" rel="images/one.jpg" />
+  <img class="previews" style="width:100px; height:100px;" src="images/two.jpg" rel="images/two.jpg" />
+  <img class="previews" style="width:100px; height:100px;" src="images/three.jpg" rel="images/three.jpg" />
+</form>
+</body>
+
+</html>
